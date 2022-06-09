@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>My To Do List</h1>
+      <div class="first">
+        <input type="text" name="todo" id="input" placeholder="Enter Here" />
+        <button onclick="addMission()">Add</button>
+
+        <div class="container__todo">
+          <ul class="container__todo--mission">
+            <h3>To Do</h3>
+          </ul>
+
+          <ul class="container__todo--doing">
+            <h3>Doing</h3>
+          </ul>
+
+          <ul class="container__todo--done">
+            <h3>Done</h3>
+          </ul>
+
+        </div>
+
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
