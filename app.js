@@ -1,8 +1,10 @@
 const ulTodo = document.querySelector(".container__todo--mission")
 const ulDoing = document.querySelector(".container__todo--doing")
 const ulDone = document.querySelector(".container__todo--done")
+
 function addMission() {
     //! move from "input" to "to do"
+    if(document.getElementById("input").value){
     let li = document.createElement("li")
     let input = document.getElementById("input")
     let text = document.createTextNode(input.value)
@@ -22,7 +24,7 @@ function addMission() {
         let li2 = document.createElement("li")
         let symbol2 = document.createElement("i")
         let text = document.createTextNode(li.innerText)
-        symbol2.className = "fa-solid fa-arrow-right"
+        symbol2.className = "fa-solid fa-person-digging"
         li2.className = "doing-list"
         li2.appendChild(text)
         ulDoing.appendChild(li2)
@@ -45,14 +47,11 @@ function addMission() {
                 li3.style.textDecoration = "line-through"
                 li3.style.color = "#28a745"
                 symbol3.className = ""
-                // let info = document.createElement("p")
-                // let message = document.createTextNode("Congratulations")
-                // info.appendChild(message)
-                // ulDone.appendChild(info)
-                // li3.innerHTML = ""
-                // info.style.color = "#28a745"
             })
         })
-
     })
-}
+}}
+
+// let storage = localStorage.setItem("todo", li.innerHTML)
+//     console.log(storage)
+//     li.innerHTML = localStorage.getItem("todo")
